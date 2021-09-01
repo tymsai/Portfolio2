@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.Y.M.SAI</title>
+    <link rel ="icon" href="./resource/mani.jpg">
+    <link rel="stylesheet" href="./resource/style.css">
+</head>
+<body>
+    <div class="mainwrapper">
+            <header>
+            <!-- the dmode button -->
+            <label onclick="slider()" id="dark-change"></label>
+        </header>      
+        <main>
+            <div class="profilephoto">
+                <!-- the profile photo -->
+                <br>
+                    <img class="m" id="my-img" src="./resource/center.gif" alt="Profile Photo" onmouseover='hover()'>
+            </div>
+            <div class="msg">
+                <!-- txt message -->
+                <br>
+                Passionate coder and Eager to learn, <br> 
+                Studying B.Tech 2nd Year in Information Technology. <br>
+                I know Web-Development , C , C++ & JavaScript. <br>
+                <br>
+                 <h3>Work Experience</h3> 
+                <br>
+                At Present : Web-Development Intern @<a href="https://growthcentralvc.com/">Growth Central VC</a> || 2021: August
+                <br>
+                At Past : Tech Intern @<a href="https://gaotek.com/">GaoTek Inc.</a> || 2021: May - August
+            </div>
+        </main>
+        <br>
+        <div class="cflimg">
+            <img src="./resource/1.gif" height="100rem" width="1000rem" alt="">
+        </div>
+        <footer>
+            <div class="links">
+                <!-- links -->
+                <div class="github">
+                    <a target="_blank" href="https://github.com/tymsai"><img class="rad" width="92rem" src="./resource/github.gif" alt=""></a>
+                    
+                </div>
+                <div class="linkedin">
+                    <a target="_blank" href="https://www.linkedin.com/in/t-y-m-sai-4ab087203/"><img class="rad" width="80rem" src="./resource/linkedin.gif" alt=""></a>
+                    
+                </div>
+                <div class="mail">
+                    <a href="mailto:tymsai6076@gmail.com" target="_tymsai6076@gmail.com"><img class="rad" width="100rem" src="./resource/gmail.gif" alt=""></a>
+                </div>
+                <div class="xda">
+                    <a target="_blank" href="https://forum.xda-developers.com/m/t-y-m-sai.10958681/"><img class="rad" width="60rem" src="./resource/xda.gif" alt=""></a>
+                </div>
+                <div class="contactform">
+                    <a target="_blank" href="./resource/index.html"><img class="rad" width="60rem" src="./resource/google-messages.svg" alt=""></a>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <!-- the copyright title -->
+                <p class="contact"> &copy 2021 , Made By T.Y.M.SAI  </p>
+            </div>
+            <center>
+                <p class="extra">All the above GIFs / Photos are the properties of their own respective owners. Copyright is only for the written code of the website (Including app.js , style.css files)</p>
+            </center>
+        </footer>
+    </div>
+    <script> 
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+            darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+        function slider(){
+        var colorchangeone=document.getElementById('nameform')
+        var colorchangetwo=document.getElementById('msgform')
+        }
+        function hover() {
+        document.getElementById("my-img").src = "./resource/flipcat.gif";
+}
+    </script>
+</body>
+</html>

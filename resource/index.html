@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.Y.M.SAI</title>
+    <link rel = "icon" href="./">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <center>
+        <div class="mainwrapper">
+            <header>
+            <!-- the dmode button -->
+            <label onclick="slider()" id="dark-change"></label>
+        </header> 
+        <br><br><br>
+        <br><br>    
+            <div class="contactform">
+                <h3 class="contact">Send a Message to Me</h3>
+                <br><br><br><br><br>
+                <!-- form -->
+                <form class="forms" method="POST" data-netlify="true">
+                    <div class="name">
+                        <input id="nameform" class="nor" type="text" name="name" placeholder="Name">
+                    </div>
+                    <div class="message">
+                        <input id="msgform" class="mor" type="text" name="message" placeholder="Write anything">
+                    </div>
+                    <div class="send">
+                        <button class="btn" type="submit">Send</button>
+                    </div>
+                    <div class="dot">
+                        <p class="dfh"></p>
+                    </div>
+                </form>
+            </div>
+            
+        </footer>
+    </div>
+    </center>
+    
+    <script> 
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+            darkMode.addEventListener('click', function(){
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+
+        function slider() {
+    var colorchangeone=document.getElementById('nameform')
+    var colorchangetwo=document.getElementById('msgform')
+    colorchangeone.classList.toggle('changu')
+    colorchangetwo.classList.toggle('changu')}
+    </script>
+</body>
+</html>
